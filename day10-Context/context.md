@@ -4,53 +4,52 @@
         `const {Provider,Consumer} = React.createContext()`
    2、使用Provider组件作为父节点
         `
-        <Provider>
-            <div className ="App">
-                <Child>
-            </div>
-        </Provider>
+            <Provider>
+                <div className ="App">
+                    <Child>
+                </div>
+            </Provider>
+            `
+        3、设置value属性，表示要传递的数据
+            `
+            <Provider value="传递的值"></Provider> 
+            `  
+        4、调用consumer接收组件数据
         `
-    3、设置value属性，表示要传递的数据
-        `
-           <Provider value="传递的值"></Provider> 
-        `
-    4、调用consumer接收组件数据
-    
-    `
-    class App extends React.Compontent{
-        render (){
+        class App extends React.Compontent{  
+            render (){
+                return (
+                    <Provider value="pink">
+                        <div className="app">
+                            <Node />
+                        </div>
+                    </Provider>
+                )
+            }
+        }
+        const Node = props=>{
             return (
-                <Provider value="pink">
-                    <div className="app">
-                        <Node />
-                    </div>
-                </Provider>
+                <div className="node">
+                    <SubNode />
+                </div>
             )
         }
-    }
-    const Node = props=>{
-        return (
-            <div className="node">
-                <SubNode />
+        const SubNode =props=>{
+            return (
+                <div className="subnode">
+                    <Child />
+                </div>
+            )
+        }
+        
+        `
+        const Child = props=>{
+            return  <div className="subnode">
+            <Consumer>
+            {
+                data=><span>我是子节点--{data}</span>
+            }
+            </Consumer>
             </div>
-        )
-    }
-    const SubNode =props=>{
-        return (
-            <div className="subnode">
-                <Child />
-            </div>
-        )
-    }
-    
-    `
-    const Child = props=>{
-        return  <div className="subnode">
-          <Consumer>
-          {
-              data=><span>我是子节点--{data}</span>
-          }
-          </Consumer>
-        </div>
-    }
+        }
     `

@@ -9,3 +9,7 @@
             )
         }
     `
+    3、props的默认值比如分页组件的每页显示条数
+    App.defaultProps=(
+        pageSize:10
+    )
