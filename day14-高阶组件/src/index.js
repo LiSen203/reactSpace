@@ -9,7 +9,9 @@ import ReactDOM from 'react-dom'
 // 2、指定函数参数，参数以大字母开头（作为要渲染的组件）
 // 3、在函数内部创建一个类组件，提供复用的状态逻辑代码，并返回
 // 4、在该组件中，渲染参数组件，同时将状态通过prop传递给参数组件
-
+//5、displayName 使用高阶组件存在问题 得到二个组件名称相同
+// 为高阶组件设置displayName 便于调试区分二个不同的组件，解决调试工具中的调试信息
+// 6、传递props  问题是props丢失 高阶组件米有向下传递
 // 高阶组件
 // 创建高阶组件
 function withMouse(WrappedComponent){
@@ -34,7 +36,8 @@ function withMouse(WrappedComponent){
         window.removeEventListener('mousemove',this.handleMouseMove)
       }
       render(){
-        return <WrappedComponent {...this.state}></WrappedComponent>
+        console.log('Mouse',this.props);
+        return <WrappedComponent {...this.state}{...this.props}></WrappedComponent>
       }
   }
   return Mouse
@@ -55,7 +58,7 @@ class App extends React.Component{
         <div>
           <h1>高阶组件</h1>
           {/* 渲染增强后的组件 */}
-          <MousePosition></MousePosition>
+          <MousePosition a="2"></MousePosition>
         </div>
     )
   }
