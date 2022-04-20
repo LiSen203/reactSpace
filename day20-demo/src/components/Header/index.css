@@ -1,0 +1,26 @@
+h1{
+    font: 30px bold 仿宋;				
+    color: chocolate;
+    text-align: center;
+}
+ul{ background-color: #dddddd;
+   
+}
+li{	display: inline-block;
+    margin-left: 5px;
+    border:3px ;
+    padding:5px;
+    width: 17%;
+    height: 30px;				
+}
+a{	display:block;
+    text-decoration: none;
+    color: chocolate;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+li:hover {  background-color: white;
+    border-top: 3px solid #ff7f00;			
+}
+a:hover{color: #ff7f00}

@@ -1,21 +1,20 @@
+// 根组件
 import React from "react";
-import {BrowserRouter as Router ,Routes,Route ,Link} from 'react-router-dom'
-import Home from './pages/Home'
-import Shopcar from './pages/Shopcar'
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom'
+import AddStudent  from './pages/Context/AddStudent'
+import AllStudent  from './pages/Context/AllStudent'
+// Switch可以提高路由匹配效率(单一匹配)
 function App(){
-   
     return (
-            <Router>
-                <Link to='/home'>首页</Link>
-                <Link to='/shopcar'>购物车</Link>
-                <div className="App">
-              
-                    <Routes>
-                        <Route path="/shopcar" element={<Shopcar></Shopcar>}></Route>
-                        <Route path="/home" element={<Home></Home>}></Route>
-                    </Routes>          
-                </div>
-            </Router> 
+        <div className="App">
+        <Router>
+            <Routes>
+                <Route path="/" element={<AllStudent/>}></Route>
+                <Route path="/home" element={<AddStudent/>}></Route>
+                <Route path="/mine" element={<AllStudent/>}></Route>
+            </Routes>
+        </Router>
+    </div>
     )
 }
 export default App
