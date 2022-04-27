@@ -27,7 +27,6 @@ export default class AllStudent extends Component {
                 设置
                 </List.Item>
             </List>
-
             <List header='复杂布局'>
                 <List.Item extra={<Switch defaultChecked />}>新消息通知</List.Item>
                 <List.Item extra='未开启' clickable>

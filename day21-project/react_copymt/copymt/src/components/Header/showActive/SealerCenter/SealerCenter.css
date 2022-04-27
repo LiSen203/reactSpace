@@ -1,0 +1,32 @@
+#SealerCenter {
+  position: absolute;
+  width: 78px;
+  height: 200px;
+  background-color: #fff;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 265px;
+}
+#SealerCenter .item {
+  width: 106px;
+  height: 40px;
+  font-size: 12px;
+  background-color: #fff;
+  color: #999999;
+  line-height: 40px;
+  text-align: center;
+}
+#SealerCenter .item:first-child {
+  width: 76px;
+  height: 40px;
+  font-size: 12px;
+  background-color: #fff;
+  color: #999999;
+  line-height: 40px;
+  text-align: center;
+}
+#SealerCenter .item:hover {
+  color: #FE8C00;
+}

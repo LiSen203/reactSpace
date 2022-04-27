@@ -36,7 +36,7 @@ function withMouse(WrappedComponent){
         window.removeEventListener('mousemove',this.handleMouseMove)
       }
       render(){
-        console.log('Mouse',this.props);
+        console.log('Mouse'  ,this.props);
         return <WrappedComponent {...this.state}{...this.props}></WrappedComponent>
       }
   }
