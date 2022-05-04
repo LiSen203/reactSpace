@@ -1,20 +1,22 @@
-// 根组件
-import React from "react";
-import { BrowserRouter as Router,Route, Routes } from 'react-router-dom'
-import AddStudent  from './pages/Context/AddStudent'
-import AllStudent  from './pages/Context/AllStudent'
-// Switch可以提高路由匹配效率(单一匹配)
-function App(){
+import './App.css';
+import Index from './views/Home/index'
+import React,{Component} from "react";
+// import 'antd/dist/antd.css';
+// import axios from 'axios';
+export default class App extends Component{
+
+  state={}
+  changeValue =(event,value)=>{
+    this.setState({
+      [value]:event.target.value
+    })
+    console.log(this.state.changetest)
+  }
+  render(){
     return (
-        <div className="App">
-        <Router>
-            <Routes>
-                <Route path="/" element={<AllStudent/>}></Route>
-                <Route path="/home" element={<AddStudent/>}></Route>
-                <Route path="/mine" element={<AllStudent/>}></Route>
-            </Routes>
-        </Router>
-    </div>
-    )
+      <div className="App">
+        <Index></Index>
+      </div>
+    );
+  }
 }
-export default App
