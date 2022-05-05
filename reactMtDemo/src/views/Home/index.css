@@ -1,0 +1,242 @@
+#index .searchCon {
+    display: flex;
+  }
+  #index .searchCon .logoCon {
+    margin-left: 79.5px;
+    width: 126px;
+    height: 46px;
+    padding-top: 28px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+  }
+  #index .searchCon .logoCon .logo {
+    width: 126px;
+    height: 46px;
+  }
+  #index .searchCon .search {
+    width: 550px;
+    height: 40px;
+    padding-top: 28px;
+    margin-left: 115px;
+  }
+  #index .searchCon .search .searchInput {
+    border: 1px solid #E5E5E5;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    line-height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 14px;
+    height: 40px;
+    width: 470px;
+    background: transparent;
+    outline: none;
+  }
+  #index .searchCon .search .searchButton {
+    background-color: #FFC300;
+    outline: none;
+    width: 80px;
+    box-sizing: border-box;
+    line-height: 100%;
+    height: 40px;
+    border: none;
+    float: right;
+    color: #222222;
+    cursor: pointer;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+  }
+  #index .clearFix {
+    height: 35px;
+    width: 100vw;
+    background-color: #fff;
+  }
+  #index .main {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background: linear-gradient(#f8f8f8, #fff);
+    z-index: -999;
+  }
+  #index .main .leftNav {
+    position: absolute;
+    width: 230px;
+    height: 462px;
+    text-align: left;
+    top: 5px;
+    background: #FFF;
+    box-sizing: border-box;
+    border: 1px solid #E5E5E5;
+    left: 79.5px;
+  }
+  #index .main .leftNav .title {
+    margin-left: 15px;
+    padding-top: 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  #index .main .leftNav .serviceList ul {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  #index .main .leftNav .serviceList ul li {
+    font-size: 13px;
+    color: #646464;
+    list-style: none;
+    height: 26px;
+    line-height: 26px;
+  }
+  #index .main .titles {
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 30px;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    left: 310px;
+  }
+  #index .main .titles .item1 {
+    width: 64px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item1:hover {
+    color: #fbc700;
+  }
+  #index .main .titles .item2 {
+    width: 64px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item2:hover {
+    color: #ed1e24;
+  }
+  #index .main .titles .item3 {
+    width: 64px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item3:hover {
+    color: #f04d4e;
+  }
+  #index .main .titles .item4 {
+    width: 80px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item4:hover {
+    color: #FDC411;
+  }
+  #index .main .titles .item5 {
+    width: 64px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item5:hover {
+    color: #FE8C00;
+  }
+  #index .main .titles .item6 {
+    width: 64px;
+    height: 21px;
+    margin: 0 20px;
+  }
+  #index .main .titles .item6:hover {
+    color: #f04d4e;
+  }
+  #index .main .adImgs {
+    width: 980px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 300px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #index .main .adImgs .ant-carousel {
+    width: 550px;
+    height: auto;
+    margin-left: 25px;
+  }
+  #index .main .adImgs .ant-carousel .item img {
+    width: 550px;
+    height: 240px;
+  }
+  #index .main .adImgs .songImg {
+    width: 150px;
+    height: 240px;
+    margin: 0 10px;
+  }
+  #index .main .adImgs .loginCon {
+    width: 230px;
+    height: 240px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e5e5;
+    padding-top: 30px;
+  }
+  #index .main .adImgs .loginCon .logoCon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-self: center;
+  }
+  #index .main .adImgs .loginCon .logoCon .logo {
+    width: 55px;
+    height: 55px;
+  }
+  #index .main .adImgs .loginCon .welcome {
+    font-size: 16px;
+    color: #222;
+    text-align: center;
+    font-weight: 500;
+    align-self: center;
+  }
+  #index .main .adImgs .loginCon .button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    align-self: center;
+    margin: 5px 54px 7.5px;
+  }
+  #index .main .adImgs .shareCon {
+    width: 230px;
+    height: 167px;
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+  }
+  #index .main .adImgs .shareCon #bill_qr_code_url {
+    margin-top: 10px;
+    align-self: center;
+  }
+  #index .main .adImgs .shareCon .AppText {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  #index .main .adImgs .shareCon .Ads {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #3f3f3f;
+    margin-bottom: 0px;
+  }
+  
