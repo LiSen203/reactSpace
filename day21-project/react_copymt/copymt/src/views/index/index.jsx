@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 import './index.css'
 import Header from '../../components/Header'
 import Recommends from '../../components/Recommends'
-import {  Carousel  } from 'antd';
-
-import QRCode  from 'qrcode.react';
-
-
+import {  Carousel  } from 'antd'
 export default class index extends Component {
     state={
         // img:`${require('../../static/imgs/logo.png')}`
@@ -179,11 +175,7 @@ export default class index extends Component {
                         <img style={{width:'270px',height:'165px',margin:'10px 10px 0 0'}} src="http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg" alt=""/>
                         <img style={{width:'150px',height:'165px',margin:'10px 10px 0 0'}} src="http://p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg" alt=""/>
                         <div className='shareCon'>
-                            <QRCode
-                                id="bill_qr_code_url"
-                                value='xxx' //value参数为生成二维码的链接 我这里是由后端返回
-                                size={95} //二维码的宽高尺寸
-                                fgColor="#000000"></QRCode>
+                           
                             <p className='AppText'>美团APP手机版</p>
                             <p className='Ads'><span style={{color:'#EC5300'}}>1元起</span>吃喝玩乐</p>
                         </div>
