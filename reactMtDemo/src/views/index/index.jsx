@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 import Header from '../../components/Header'
-// import Recommends from '../../components/Recommends'
+import Recommends from '../../components/Recommends'
 import {  Carousel  } from 'antd'
 export default class index extends Component {
     state={
@@ -181,8 +181,8 @@ export default class index extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <Recommends filmObject={this.state.filmObject}></Recommends>
-                <Recommends filmObject={this.state.hotalObject}></Recommends> */}
+                <Recommends filmObject={this.state.filmObject}></Recommends>
+                <Recommends filmObject={this.state.hotalObject}></Recommends>
             </div>
         )
     }

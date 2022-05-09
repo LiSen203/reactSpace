@@ -1,10 +1,15 @@
-// 入口文件
-import React from 'react'
-import ReactDOM  from 'react-dom'
-// 引入根组件
-import App from './App'
-// 导入样式
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+// import router from './routes/index.js'
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root') 
+);
+
+reportWebVitals();
