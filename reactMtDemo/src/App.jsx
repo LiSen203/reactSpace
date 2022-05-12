@@ -4,7 +4,6 @@ import React,{Component} from "react";
 import 'antd/dist/antd.css';
 // import axios from 'axios';
 export default class App extends Component{
-
   state={}
   changeValue =(event,value)=>{
     this.setState({
